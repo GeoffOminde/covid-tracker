@@ -47,7 +47,5 @@ To deploy publicly (e.g., Streamlit), consider converting core logic into `.py` 
 - Modular cells and widgets allow quick adaptation to new datasets or goals  
 - Next phase could include **predictive modeling** or a **Streamlit dashboard** for mobile accessibility
 
----
 
-Ready for me to generate this markdown block inside your notebook or push it into a new repo? Or want a version that mirrors your branding again, if this goes public later?
 
