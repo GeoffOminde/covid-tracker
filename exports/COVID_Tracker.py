@@ -24,10 +24,10 @@ start_date = st.sidebar.date_input("Start date", value=min_date, min_value=min_d
 end_date = st.sidebar.date_input("End date", value=max_date, min_value=min_date, max_value=max_date)
 
 # Convert date_input (date) -> pandas Timestamp
-start_ts = pd.to_datetime({start_date})
+start_ts = pd.to_datetime(start_date)
 end_ts = pd.to_datetime(end_date)
 
-df_country = df[df['location'] == {selected_country}].copy()
+df_country = df[df['location'] == selected_country].copy()
 df_country = df_country[(df_country['date'] >= start_ts) & (df_country['date'] <= end_ts)]
 
 st.title("🦠 COVID-19 Data Tracker")
